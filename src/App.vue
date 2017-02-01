@@ -14,10 +14,10 @@
 <script>
 /* eslint-disable */
 import Hello from './components/Hello';
-import Config from './firebase_config';
 
-var config = Config;
-firebase.initializeApp(config);
+import config from './firebase_config'
+firebase.initializeApp(config)
+
 var db = firebase.database();
 
 export default {
