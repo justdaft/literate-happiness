@@ -13,15 +13,10 @@
 
 <script>
 /* eslint-disable */
-import Hello from './components/Hello'
+import Hello from './components/Hello';
+import Config from './firebase_config';
 
-var config = {
-  apiKey: "AIzaSyDCqZJdAlIwnXzs_EADJItvxUVP0a3gMkE",
-  authDomain: "workout-sessions.firebaseapp.com",
-  databaseURL: "https://workout-sessions.firebaseio.com",
-  storageBucket: "workout-sessions.appspot.com",
-  messagingSenderId: "495214712505"
-};
+var config = Config;
 firebase.initializeApp(config);
 var db = firebase.database();
 
