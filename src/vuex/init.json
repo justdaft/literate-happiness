@@ -1,0 +1,72 @@
+{
+  "user": {
+    "name": "Billy",
+    "age": 21,
+    "workouts": [
+      {
+        "wrk1": {
+          "name": "Full body",
+          "exercises": [
+            {
+              "name": "ex1",
+              "sets": [
+                {
+                    "set1": {
+                      "weight": 23,
+                      "reps": 15
+                    },
+                    "set2": {
+                      "weight": 23,
+                      "reps": 15
+                    },
+                    "set3": {
+                      "weight": 23,
+                      "reps": 15
+                    }
+                }
+              ]
+            },
+            {
+              "name": "ex2",
+              "sets": [
+                {
+                  "set1": {
+                    "weight": 23,
+                    "reps": 15
+                  },
+                  "set2": {
+                    "weight": 23,
+                    "reps": 15
+                  },
+                  "set3": {
+                    "weight": 23,
+                    "reps": 15
+                  }
+                }
+              ]
+            },
+            {
+              "name": "ex3",
+              "sets": [
+                {
+                  "set1": {
+                    "weight": 23,
+                    "reps": 15
+                  },
+                  "set2": {
+                    "weight": 23,
+                    "reps": 15
+                  },
+                  "set3": {
+                    "weight": 23,
+                    "reps": 15
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

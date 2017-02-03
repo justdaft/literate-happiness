@@ -1,0 +1,85 @@
+{
+  "users": {
+    "billyw01": {
+      "name": "billy",
+      "id": "billyw01"
+    },
+    "lorrainew01": {
+      "name": "lorraine",
+      "id": "lorrainew01"
+    }
+  },
+  "workouts": {
+    "wrk1": {
+      "title": "Full Body",
+      "data": "stuff",
+      "createdBy": "billyw01",
+      "excersises": {
+        "ex1": {
+          "set1": {
+            "weight": 23,
+            "reps": 15
+          },
+          "set2": {
+            "weight": 23,
+            "reps": 15
+          },
+          "set3": {
+            "weight": 23,
+            "reps": 15
+          }
+        },
+        "ex2": {
+          "set1": {
+            "weight": 23,
+            "reps": 15
+          },
+          "set2": {
+            "weight": 23,
+            "reps": 15
+          },
+          "set3": {
+            "weight": 23,
+            "reps": 15
+          }
+        },
+        "ex3": {
+          "set1": {
+            "weight": 23,
+            "reps": 15
+          },
+          "set2": {
+            "weight": 23,
+            "reps": 15
+          },
+          "set3": {
+            "weight": 23,
+            "reps": 15
+          }
+        }
+      }
+    },
+    "wrk2": {
+      "data": "stuff",
+      "createdBy": "billyw01",
+      "title": "Half Body"
+    },
+    "wrk3": {
+      "data": "stuff",
+      "createdBy": "lorrainew01",
+      "title": "Legs only"
+    }
+  },
+  "sessions": {
+    "session1": {
+      "doneBy": "billyw01",
+      "workoutDone": "wrk1",
+      "dateDone": "today"
+    },
+    "session2": {
+      "doneBy": "billyw01",
+      "workoutDone": "wrk1",
+      "dateDone": "today"
+    }
+  }
+}
