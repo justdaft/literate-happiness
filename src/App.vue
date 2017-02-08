@@ -1,11 +1,11 @@
 
 <template>
 <div id="app">
-  <md-toolbar class="md-primary">
-  </md-toolbar>
+
+  <router-view class="view"></router-view>
   <!-- <hello></hello> -->
   <!-- <pre>{{ anObject }}</pre> -->
-  <ul>
+  <!--<ul></ul>
     <li v-for="item in dataX.users">{{ item.name }}</li>
 
   </ul>
@@ -14,7 +14,7 @@
   </ul>
   <ul>
     <li v-for="item in dataX.sessions">{{ item.workoutDone }}, {{item.dateDone}}, {{item.doneBy}}</li>
-  </ul>
+  </ul>-->
   <!-- <workout>hello</workout> -->
   <!-- <md-list>
     <md-list-item v-for="item in currentWorkouts">{{item['.key']}}
@@ -26,15 +26,23 @@
 
   </md-list> -->
 <!-- {{dataX.user.workouts}} -->
-<session></session>
+<!--<session></session>-->
 <br />
-<user></user>
+
+<md-button v-on:click="addSession = !addSession" class="md-fab md-fab-bottom-left">
+  <md-icon>create</md-icon>
+</md-button>
+<md-button v-on:click="addUser = !addUser" class="md-fab md-fab-bottom-right">
+  <md-icon>add</md-icon>
+</md-button>
+<session v-if="addSession"></session>
+<user v-if="addUser"></user>
 </div>
 </template>
 
 <script>
 /* eslint-disable */
-import Hello from './components/Hello';
+import CurrentSession from './components/CurrentSession';
 import Workout from './components/Workout';
 
 import Session from './components/Session';
@@ -52,7 +60,9 @@ export default {
   name: 'app',
   data() {
     return {
-        dataX
+        dataX,
+        addUser: false,
+        addSession: false
     }
   },
   methods: {},
@@ -70,10 +80,10 @@ export default {
   //   }
   // },
   components: {
-    Hello,
     Workout,
     Session,
-    User
+    User,
+    CurrentSession
   }
 }
 </script>

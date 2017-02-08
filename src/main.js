@@ -8,6 +8,9 @@ import store from './vuex/store'
 var VueFire = require('vuefire')
 var Firebase = require('firebase')
 var VueMaterial = require('vue-material')
+var moment = require('moment')
+import router from './router'
+
 Vue.use(VueFire)
 Vue.use(VueMaterial)
 
@@ -15,6 +18,7 @@ Vue.use(VueMaterial)
 new Vue({
   el: '#app',
   store,
+  router,
   template: '<App/>',
   components: { App }
 })
